@@ -20,6 +20,14 @@ if "messages" not in st.session_state.keys(): # Initialize the chat message hist
         {"role": "assistant", "content": "Ask me a question about Sherlock Holmes!"}
     ]
 
+# clear chat history
+def reset_conversation():
+  st.session_state.messages = [
+        {"role": "assistant", "content": "Ask me a question about Sherlock Holmes!"}
+    ]
+st.sidebar.button('Clear chat history', on_click=reset_conversation)
+
+
 @st.cache_resource(show_spinner=False)
 def load_data():
     with st.spinner(text="Loading and indexing the Sherlock Holmes novels – hang tight! This should take 1-2 minutes."):

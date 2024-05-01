@@ -2,6 +2,8 @@
 
 I wanted to see how hard it was going to be to make a RAG using the open source Sherlock Holmes Novels!
 
+The deployed app is here https://nikicrow-sherlock-holmes-rag-app-ybxqcz.streamlit.app/
+
 It's pretty easy and actually pretty good.
 
 I used this blog post https://blog.streamlit.io/build-a-chatbot-with-custom-data-sources-powered-by-llamaindex/
